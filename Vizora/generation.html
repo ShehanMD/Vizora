@@ -17,6 +17,8 @@
         <p>Describe the image you'd like to create in detail.<br> The more specific your description, the better the results will be.
         </p>
     </div>
+
+    
     <div class="promptArea"> 
         <input type="text" name="promt" id="prompt" placeholder="Type here...">
     </div>
@@ -42,11 +44,23 @@
                 </select>
      </div>        
 
+     <span class="loader" id="loader" style="display: none;"></span>
 
     <button id="genarate" onclick="getPrompt()">
         Genarate🎨    </button>
 
-    
+        <div class="imageBackdrop" id="imageBackdrop">
+            <div class="imageHolder">
+                <img src="" id="ImageResalts" onload="document.getElementById('loder').style.display='none';document.getElementById('imageBackdrop').style.display='block'" alt="">
+                <div class="closeBt" onclick="document.getElementById('imageBackdrop').style.display='none'">X</div>
+                <div class="downloadBt" onclick="window.open(url, '_blank');" id="downloadBtn" >Download</div>
+            </div>
+            
+        </div>
+        <div class="imageBackdrop" id="loder">
+           <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif" class="mainLoder" alt="">            
+        </div>
+        <canvas id="hiddenCanvas" style="display: none;"></canvas>
 
     <script src="main.js"></script>
 </body>
