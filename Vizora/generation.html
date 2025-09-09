@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vizora💎</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="img/logo.png" alt="Vizora Logo" width="100vh" style="position: fixed;"></td>
+        </tr>
+    </table>
+    <div>
+        <h2 class="heading2">Generate Your Image</h2>
+        <p style="color: white;">Describe the image you'd like to create in detail.<br> The more specific your description, the better the results will be.
+        </p>
+    </div>
+
+    <textarea name="promt" id="prompt" placeholder="Type here..."></textarea>
+
+
+     
+
+     <span class="loader" id="loader" style="display: none;"></span>
+
+   <button id="genarate" onclick="getPrompt()">
+     <strong>GENARATE</strong>
+     <div id="container-stars">
+       <div id="stars"></div>
+     </div>
+
+    <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+</div>
+</button>
+
+
+
+    <h3 style="font-size: 70px; color: #03a7f3; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">TRY OUR TEMPLATES</h3>
+
+ 
+<div class="content">
+  <div class="pill">
+    <div class="medicine">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+      ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="side"></div>
+    <div class="side"></div>
+  </div>
+</div>
+    
+
+<div class="table-container">
+    <table class="templates">
+        <tr>
+            <td>
+                <div id="template1">
+                    <p class="StreetLegend">STREET LEGEND</p>
+                    <img src="img/mustang.jpg" alt="">
+                    <div class="StreetLegendDIV"></div>
+                    <button id="template1Btn">
+                        <span id="button-content"><a href="template.html">Use this</a></span>
+                    </button>
+                </div>
+            </td>
+            <td>
+                <div id="template1">
+                    <p class="StreetLegend">MORE TEMPLATES</p>
+                    <h2 style="color: white;"><i>coming soon</i></h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+        
+<div class="imageBackdrop" id="imageBackdrop">
+            <div class="imageHolder">
+                <img src="" id="ImageResalts" onload="document.getElementById('loder').style.display='none';document.getElementById('imageBackdrop').style.display='block'" alt="">
+                <div class="closeBt" onclick="document.getElementById('imageBackdrop').style.display='none'">X</div>
+                <button class="downloadBt" id="downloadBtn" onclick="window.open(url, '_blank');">
+                <span class="IconContainer">
+                    <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                        <path
+                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.7V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v338.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                        ></path>
+                    </svg>
+                </span>
+                <p class="text">Download</p>
+                </button>
+
+            </div>
+            
+        </div>
+        <div class="imageBackdrop" id="loder">
+           <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif" class="mainLoder" alt="">            
+        </div>
+        <canvas id="hiddenCanvas" style="display: none;"></canvas>     
+
+    <script src="main.js"></script>
+</body>
+</html>
