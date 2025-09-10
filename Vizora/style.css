@@ -1224,7 +1224,7 @@ h3{
     .templates tr,
     .templates td {
         display: block;     
-        width: 100%;
+        width: 80%;
         text-align: center;  
     }
 
@@ -1265,6 +1265,7 @@ h3{
     width: 30vh;
     font-size: 1rem;
   }
+  
   .subText{
     font-size: 16px;
   }
