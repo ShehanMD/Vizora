@@ -1057,8 +1057,8 @@ h3{
     }
 
     .imageHolder {
-        max-width: 30vw;     /* ✅ Take almost full width */
-        max-height: 30vh;    /* ✅ Fit inside mobile screen */
+        max-width: 95vw;     /* ✅ Take almost full width */
+        max-height: 80vh;    /* ✅ Fit inside mobile screen */
         padding: 6px;
     }
 }
