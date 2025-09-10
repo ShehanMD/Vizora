@@ -577,15 +577,15 @@ strong {
     border-radius: 0.25em;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    /* Remove IE arrow */
+    
     &::-ms-expand {
       display: none;
     }
-    /* Remove focus outline */
+    
     &:focus {
       outline: none;
     }
-    /* <option> colors */
+    
     option {
       color: inherit;
       background-color: var(--option-bg);
@@ -593,7 +593,7 @@ strong {
   }
 
 #heightIMG {
-    /* Reset */
+    
     appearance: none;
     border: 0;
     outline: 0;
@@ -1219,7 +1219,7 @@ h3{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .templates,
     .templates tr,
     .templates td {
@@ -1257,7 +1257,7 @@ h3{
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 300px){
   .promptArea{
     width:30vh;
   }
