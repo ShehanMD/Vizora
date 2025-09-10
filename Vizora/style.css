@@ -1259,7 +1259,7 @@ h3{
 
 @media screen and (max-width: 600px){
   .promptArea{
-    width:20vh;
+    width: 30px;
   }
   #prompt{
     width: 25vh;
