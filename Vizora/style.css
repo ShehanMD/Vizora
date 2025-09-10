@@ -1219,48 +1219,60 @@ h3{
 }
 
 
-@media screen and (max-width: 600px) {
-      .templates,
+     @media screen and (max-width: 720px) {
+    /* Make the table stack vertically */
+    .templates,
     .templates tr,
     .templates td {
-        display: block;           /* Stack templates vertically */
-        width: 100%;              /* Take full width */
+        display: block;
+        width: 100%;
         text-align: center;
     }
 
-    /* Reduce template container size */
+    /* Container size fix */
     #template1 {
-        max-width: 90%;           /* Reduce container width */
-        margin: 0 auto;           /* Center it */
+        width: 90%;           /* Reduce size for mobile */
+        max-width: 380px;     /* Prevent overly wide templates */
+        margin: 0 auto;       /* Center horizontally */
     }
 
     /* Make images responsive */
     #template1 img {
-        width: 100%;              /* Scale image to fit container */
-        height: auto;             /* Keep aspect ratio */
-        border-radius: 12px;      /* Keep rounded corners if needed */
+        width: 100%;          /* Fill container */
+        height: auto;         /* Keep aspect ratio */
+        max-width: 380px;     /* Avoid cutting edges */
+        border-radius: 12px;  /* Keep smooth corners */
     }
 
+    /* Button responsiveness */
+    #template1Btn {
+        width: 90%;
+        max-width: 250px;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Fix text sizes */
+    .StreetLegend {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Add spacing between templates */
     .templates td {
         margin-bottom: 20px;
         padding: 10px;
     }
 
-    /* Fix button size on mobile */
-    #template1Btn {
-        width: 90%;
-        max-width: 250px;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-   
+    /* Prevent unwanted horizontal scroll */
     body {
-        overflow-x: hidden;   
-        overflow-y: auto;     
+        overflow-x: hidden;
     }
+}
 
    
+@media screen and (max-width: 600px) {
     ::-webkit-scrollbar {
         display: none;
     }
