@@ -1220,22 +1220,38 @@ h3{
 
 
 @media screen and (max-width: 600px) {
-    .templates,
+      .templates,
     .templates tr,
     .templates td {
-        flex-direction: column;
-        padding: 10px;
-        margin-left: 2px;
-        display: block;     
-        width: 100%;
-        text-align: center;  
-        flex-direction: column;
-        align-items: center;
+        display: block;           /* Stack templates vertically */
+        width: 100%;              /* Take full width */
+        text-align: center;
+    }
+
+    /* Reduce template container size */
+    #template1 {
+        max-width: 90%;           /* Reduce container width */
+        margin: 0 auto;           /* Center it */
+    }
+
+    /* Make images responsive */
+    #template1 img {
+        width: 100%;              /* Scale image to fit container */
+        height: auto;             /* Keep aspect ratio */
+        border-radius: 12px;      /* Keep rounded corners if needed */
     }
 
     .templates td {
         margin-bottom: 20px;
-        margin-left: 0px;
+        padding: 10px;
+    }
+
+    /* Fix button size on mobile */
+    #template1Btn {
+        width: 90%;
+        max-width: 250px;
+        padding: 10px;
+        font-size: 16px;
     }
 
    
