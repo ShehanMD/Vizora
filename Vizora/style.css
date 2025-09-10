@@ -1223,6 +1223,8 @@ h3{
     .templates,
     .templates tr,
     .templates td {
+        flex-direction: column;
+        padding: 10px;
         margin-left: 2px;
         display: block;     
         width: 100%;
