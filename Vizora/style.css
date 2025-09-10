@@ -1221,7 +1221,7 @@ h3{
 
 @media screen and (max-width: 600px) {
     .table-container{
-      width:70px;
+      width:70vh;
     }
     .templates,
     .templates tr,
