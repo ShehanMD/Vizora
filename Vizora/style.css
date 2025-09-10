@@ -1223,6 +1223,7 @@ h3{
     .templates,
     .templates tr,
     .templates td {
+        margin-left: 2px2;
         display: block;     
         width: 30%;
         text-align: center;  
