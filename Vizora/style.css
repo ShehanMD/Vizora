@@ -1223,9 +1223,9 @@ h3{
     .templates,
     .templates tr,
     .templates td {
-        margin-left: 2px2;
+        margin-left: 2px;
         display: block;     
-        width: 30%;
+        width: 5%;
         text-align: center;  
         flex-direction: column;
         align-items: center;
