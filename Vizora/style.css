@@ -1030,8 +1030,8 @@ h3{
     opacity: 0px;
   }
   #form-container {
-        width: 90%;            /* ✅ Auto-fit screen */
-        max-width: 380px;      /* ✅ Limit max width */
+        width: 80%;            /* ✅ Auto-fit screen */
+        max-width: 200px;      /* ✅ Limit max width */
         padding: 20px;         /* ✅ Reduce padding for mobile */
         margin: 20px auto;     /* ✅ Reduce top spacing */
     }
